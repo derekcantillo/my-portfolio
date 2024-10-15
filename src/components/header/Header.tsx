@@ -1,6 +1,8 @@
+'use client'
 import { cn, routes } from 'lib'
 import Link from 'next/link'
 import React from 'react'
+import { ThemeToggle } from 'components'
 
 export const Header = (): JSX.Element => {
 	return (
@@ -15,7 +17,9 @@ export const Header = (): JSX.Element => {
 					</Link>
 				))}
 			</div>
-			<div className=""></div>
+			<div className="">
+				<ThemeToggle />
+			</div>
 		</div>
 	)
 }

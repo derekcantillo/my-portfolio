@@ -48,9 +48,11 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 			if (systemPreference) {
 				root.classList.add('dark')
 				root.classList.remove('light')
+				setTheme('dark')
 			} else {
 				root.classList.add('light')
 				root.classList.remove('dark')
+				setTheme('light')
 			}
 		}
 	}
